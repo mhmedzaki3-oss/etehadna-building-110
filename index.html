@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="apple-touch-icon.png"><meta name="theme-color" content="#0b3d91"><title>اتحادنا AI | العقار 110</title>
+<style>
+:root{--b:#0b3d91;--b2:#072a66;--y:#f5b700;--card:#fff;--soft:#f1f5fc;--ink:#14213d;--mut:#5b6785;--line:#dfe6f3;--red:#c0392b;--grn:#1b7f4b;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--card:#0f1a33;--soft:#16254a;--ink:#eef2fb;--mut:#a7b3d1;--line:#26365f;--red:#ff8a7a;--grn:#5fd49a}}
+:root[data-theme="dark"]{--card:#0f1a33;--soft:#16254a;--ink:#eef2fb;--mut:#a7b3d1;--line:#26365f;--red:#ff8a7a;--grn:#5fd49a}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}
+body{margin:0;background:var(--b2);font-family:Tahoma,Arial,sans-serif;color:var(--ink);padding:14px 10px 30px}
+.frame{max-width:780px;margin:auto;background:var(--card);border:4px solid var(--y);border-radius:22px;overflow:hidden;box-shadow:0 10px 40px #0006}
+header{background:linear-gradient(130deg,var(--b2),var(--b));color:#fff;padding:16px;border-bottom:4px solid var(--y)}
+.top{display:flex;justify-content:space-between;align-items:center;gap:10px}.brand{font-size:21px;font-weight:800}.sub{font-size:12px;opacity:.85;margin-top:4px}
+.role{display:inline-block;margin-top:8px;background:var(--y);color:#14213d;border-radius:20px;padding:4px 11px;font-size:12px;font-weight:bold}
+.mb{border:2px solid var(--y);background:transparent;color:var(--y);border-radius:30px;padding:8px 12px;font-weight:bold;cursor:pointer;font:inherit;font-size:12px}.mb.on{background:var(--y);color:#14213d}
+nav{display:flex;gap:6px;overflow-x:auto;padding:10px 12px;background:var(--soft)}nav button{flex:1;white-space:nowrap;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:30px;padding:9px 12px;font:inherit;font-size:13px;font-weight:bold;cursor:pointer}nav button.on{background:var(--b);border-color:var(--y);color:#fff}
+main{padding:12px}.sec{display:none}.sec.on{display:block}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:12px}.st,.card{background:var(--soft);border:1px solid var(--line);border-radius:14px;padding:13px}.card{margin-bottom:12px}.st small{color:var(--mut);font-size:11px}.st b{display:block;font-size:20px;margin-top:5px;color:var(--b)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .st b{color:var(--y)}}:root[data-theme="dark"] .st b{color:var(--y)}
+h2{font-size:16px;margin:0 0 10px;border-right:5px solid var(--y);padding-right:8px}.mut{color:var(--mut);font-size:12px;line-height:1.8}
+label{display:block;font-size:12px;font-weight:bold;margin:8px 0 4px}input,select,textarea{width:100%;border:1px solid var(--line);border-radius:10px;padding:10px;background:var(--card);color:var(--ink);font:inherit;font-size:13px}
+.fg{display:grid;grid-template-columns:1fr 1fr;gap:8px}.full{grid-column:1/-1}
+.btn{border:0;background:var(--y);color:#14213d;padding:10px 14px;border-radius:10px;font:inherit;font-weight:bold;cursor:pointer;margin-top:10px}.btn.s{background:var(--b);color:#fff;padding:6px 10px;margin:0;font-size:12px}.btn.d{background:transparent;color:var(--red);border:1px solid var(--red);padding:5px 9px;margin:0;font-size:12px}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px}table{width:100%;border-collapse:collapse;font-size:12px;min-width:480px}th,td{text-align:right;padding:9px 7px;border-bottom:1px solid var(--line)}th{background:var(--soft);color:var(--mut);font-size:11px}
+.ug{display:grid;grid-template-columns:repeat(2,1fr);gap:7px}.u{border:1px solid var(--line);border-radius:11px;padding:9px;font-size:12px;background:var(--card)}.u b{display:block}.ok{border-color:var(--grn)}.part{border-color:var(--y)}.bd{display:inline-block;padding:3px 8px;border-radius:20px;font-size:11px;font-weight:bold;background:var(--soft);border:1px solid var(--line)}.bd.g{color:var(--grn)}.bd.r{color:var(--red)}.bd.y{background:var(--y);color:#14213d;border-color:var(--y)}
+.al{border:1px solid var(--line);border-radius:12px;padding:11px;margin:8px 0;background:var(--card)}.al.solved{opacity:.65}.row{display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap}.err{color:var(--red);font-size:12px}.ro{background:var(--soft);border:1px dashed var(--y);border-radius:10px;padding:10px;font-size:12px;margin-bottom:12px}
+body.locked .frame{display:none}.lk{position:fixed;inset:0;background:var(--b2);display:none;align-items:center;justify-content:center;padding:16px;z-index:50}.lk .box{background:var(--card);border:4px solid var(--y);border-radius:20px;padding:18px;width:min(380px,100%)}
+footer{text-align:center;color:var(--mut);font-size:11px;padding:14px;border-top:1px solid var(--line)}
+@media(min-width:600px){.ug{grid-template-columns:repeat(4,1fr)}.grid{grid-template-columns:repeat(4,1fr)}}
+</style></head><body class="locked">
+<div class="lk" id="lk"><div class="box"><h2 id="lkT"></h2><p class="mut" id="lkM"></p><button class="btn" id="lkR" style="width:100%">👀 دخول كساكن (عرض فقط)</button><hr style="border:0;border-top:1px solid var(--line);margin:14px 0"><label>كلمة مرور المدير</label><input id="pw" type="password" autocomplete="off"><div id="pw2w"><label>تأكيد كلمة المرور</label><input id="pw2" type="password" autocomplete="off"></div><p class="err" id="lkE"></p><button class="btn s" id="lkB" style="width:100%;padding:11px">دخول المدير</button><button class="btn d" id="lkX" style="width:100%;margin-top:8px">نسيت كلمة المرور؟ (مسح بيانات هذا الجهاز)</button></div></div>
+<div class="frame">
+<header><div class="top"><div><div class="brand">اتحادنا AI</div><div class="sub">العقار 110 – المقطم · الهضبة الوسطى، الحي الثامن</div><span class="role" id="role">…</span></div><div style="display:flex;flex-direction:column;gap:6px"><button class="mb" id="mbtn">🎵 موسيقى هادئة</button><button class="mb" id="inst" style="display:none">⬇ تثبيت التطبيق</button><button class="mb" id="lockb" style="display:none">🔒 قفل</button></div></div></header>
+<nav id="nav"><button class="on" data-t="home">الملخص</button><button data-t="subs">الاشتراكات</button><button data-t="exp">المصروفات</button><button data-t="alerts">التنبيهات</button></nav>
+<main>
+<div class="ro" id="snap" style="display:none"></div><p class="err" id="err"></p>
+<section class="sec on" id="home">
+<div class="grid" id="stats"></div>
+<div class="card"><div class="row"><h2>حالة الاشتراك الشهري</h2><input type="month" id="vm" style="width:auto"></div><p class="mut" id="msum"></p><div class="ug" id="ug"></div></div>
+<div class="card"><h2>إدارة الاتحاد</h2><p class="mut" id="mgrinfo"></p>
+<div class="mgr"><div class="fg"><div><label>قيمة الاشتراك الشهري (ج)</label><input id="sFee" type="number" min="0"></div><div><label>اسم المدير الحالي</label><input id="sMgr"></div><div><label>بداية فترة الإدارة</label><input id="sSince" type="date"></div><div class="full"><label>أسماء السكان (سطر لكل وحدة بالترتيب – 16 سطراً)</label><textarea id="sNames" rows="5"></textarea></div></div><button class="btn" id="saveSet">حفظ الإعدادات</button> <button class="btn s" id="shareB" style="padding:10px 14px">🔗 رابط عرض للجيران</button> <button class="btn s" id="bkB" style="padding:10px 14px">نسخة احتياطية</button> <label class="btn s" style="display:inline-block;margin:0;padding:10px 14px;font-size:12px">استعادة<input type="file" accept=".json" hidden id="rsF"></label></div></div>
+</section>
+<section class="sec" id="subs"><div class="ro mgrro" id="roS"></div>
+<div class="card mgr"><h2>تسجيل اشتراك</h2><div class="fg"><div><label>الوحدة</label><select id="aU"></select></div><div><label>الشهر</label><input type="month" id="aM"></div><div><label>المبلغ (ج)</label><input type="number" min="0" id="aA"></div><div><label>رقم الإيصال / ملاحظة</label><input id="aN"></div></div><button class="btn" id="addS">حفظ الاشتراك</button></div>
+<div class="card"><h2>سجل الاشتراكات</h2><div class="tw"><table><thead><tr><th>الوحدة</th><th>الشهر</th><th>المبلغ</th><th>ملاحظة</th><th></th></tr></thead><tbody id="sRows"></tbody></table></div></div></section>
+<section class="sec" id="exp"><div class="ro mgrro" id="roE"></div>
+<div class="card mgr"><h2>تسجيل مصروف</h2><div class="fg"><div><label>التصنيف</label><select id="eC"><option>صيانة</option><option>نظافة</option><option>كهرباء</option><option>مياه</option><option>مصعد</option><option>أخرى</option></select></div><div><label>المبلغ (ج)</label><input type="number" min="0" id="eA"></div><div class="full"><label>البيان / الإيصال</label><input id="eN"></div></div><button class="btn" id="addE">حفظ المصروف</button></div>
+<div class="card"><h2>سجل المصروفات</h2><div class="tw"><table><thead><tr><th>التاريخ</th><th>التصنيف</th><th>المبلغ</th><th>البيان</th><th></th></tr></thead><tbody id="eRows"></tbody></table></div></div></section>
+<section class="sec" id="alerts">
+<div class="card"><h2>إرسال تنبيه أو مشكلة</h2><p class="mut">يرسلها أي ساكن لمجموعة العمارة على واتساب، ويسجلها المدير هنا لتظهر للجميع في رابط العرض.</p><div class="fg"><div><label>النوع</label><select id="lT"><option>مشكلة</option><option>عاجل</option><option>اقتراح</option></select></div><div><label>الوحدة</label><select id="lU"></select></div><div class="full"><label>العنوان</label><input id="lH"></div><div class="full"><label>التفاصيل</label><textarea id="lD" rows="3"></textarea></div></div><button class="btn" id="waA">📲 إرسال عبر واتساب</button> <button class="btn s mgr" id="addA" style="padding:10px 14px">تسجيل في السجل</button></div>
+<div id="aList"></div></section>
+</main>
+<footer>اتحادنا AI · نسخة التطبيق 1.0 · تعمل بدون إنترنت بعد أول فتح<br><span dir="ltr">Created by: Mohamed Zaki -flat#502</span></footer>
+</div>
+<script>
+const U=[["الأرضي","101"],["الأول","101"],["الأول","102"],["الثاني","201"],["الثاني","202"],["الثالث","301"],["الثالث","302"],["الرابع","401"],["الرابع","402"],["الخامس","501"],["الخامس","502"],["السادس","601"],["السادس","602"],["السابع","701"],["السابع","702"],["الثامن","802"]].map((u,i)=>({id:"u"+i,i,f:u[0],n:u[1]}));
+const $=id=>document.getElementById(id),esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])),fmt=n=>Number(n||0).toLocaleString("ar-EG",{maximumFractionDigits:2}),r2=n=>Math.round(n*100)/100,ul=id=>{const u=U.find(x=>x.id===id);return u?lab(u):"—"};
+function lab(u){const n=(S.names||[])[u.i];return u.f+" – "+u.n+(n?" · "+n:"")}
+function nid(){return Date.now().toString(36)+Math.random().toString(36).slice(2,6)}
+function adopt(d){["subs","expenses","alerts"].forEach(k=>S[k]=Array.isArray(d[k])?d[k].filter(x=>x&&typeof x==="object").map(x=>({...x,id:String(x.id||nid()),amount:Number(x.amount)||0,ts:Number(x.ts)||0})):[]);S.fee=Number(d.fee)||0;S.mgr=String(d.mgr||"");S.since=String(d.since||"");S.names=Array.isArray(d.names)?d.names.slice(0,16).map(String):[];S.t=Number(d.t)||0}
+const S={subs:[],expenses:[],alerts:[],fee:0,mgr:"",since:"",names:[],t:0};let can=false,uid=null;const DK="e110_data_v2",AK="e110_auth_v2";try{const d=JSON.parse(localStorage.getItem(DK));if(d)adopt(d)}catch(e){}
+const now=new Date(),cm=now.getFullYear()+"-"+String(now.getMonth()+1).padStart(2,"0");
+function fillSel(){["aU","lU"].forEach(i=>{const v=$(i).value;$(i).innerHTML=U.map(u=>`<option value="${u.id}">${esc(lab(u))}</option>`).join("");if(v)$(i).value=v})}fillSel();$("aM").value=cm;$("vm").value=cm;
+$("nav").onclick=e=>{const t=e.target.dataset.t;if(!t)return;document.querySelectorAll(".sec").forEach(x=>x.classList.toggle("on",x.id===t));document.querySelectorAll("nav button").forEach(x=>x.classList.toggle("on",x.dataset.t===t));scrollTo(0,0)};
+$("vm").onchange=render;
+function render(){
+document.querySelectorAll(".mgr").forEach(x=>x.style.display=can?"":"none");
+document.querySelectorAll(".mgrro").forEach(x=>{x.style.display=can?"none":"";x.textContent="عرض فقط: تسجيل الاشتراكات والمصروفات من حق مدير العمارة وحده."});
+$("role").textContent=can?"مدير العمارة":"ساكن · عرض";
+const inc=S.subs.reduce((a,x)=>a+Math.round(x.amount*100),0)/100,out=S.expenses.reduce((a,x)=>a+Math.round(x.amount*100),0)/100,open=S.alerts.filter(a=>a.status!=="تم الحل").length;
+$("stats").innerHTML=[["إجمالي الاشتراكات",fmt(inc)+" ج"],["إجمالي المصروفات",fmt(out)+" ج"],["الرصيد",fmt(r2(inc-out))+" ج"],["تنبيهات مفتوحة",fmt(open)]].map(x=>`<div class="st"><small>${x[0]}</small><b>${x[1]}</b></div>`).join("");
+const m=$("vm").value||cm;let paidN=0,tot=0;
+$("ug").innerHTML=U.map(u=>{const p=S.subs.filter(x=>x.unit===u.id&&x.month===m).reduce((a,x)=>a+Math.round(x.amount*100),0)/100;tot+=p;const full=S.fee>0?p>=S.fee:p>0;if(full)paidN++;const cls=full?"ok":p>0?"part":"";const st=full?'<span class="bd g">مسدد</span>':p>0?`<span class="bd y">جزئي · متبقي ${fmt(r2(S.fee-p))}</span>`:'<span class="bd r">لم يسدد</span>';return`<div class="u ${cls}"><b>${esc(lab(u))}</b>${fmt(p)} ج ${st}</div>`}).join("");
+$("msum").textContent=`سدّد ${fmt(paidN)} من ${U.length} وحدة · المحصّل ${fmt(r2(tot))} ج`+(S.fee>0?` من ${fmt(r2(S.fee*U.length))} ج`:" (حدد قيمة الاشتراك لحساب المتبقي)");
+let mi="المدير الحالي: "+(S.mgr||"غير محدد");if(S.since){const e=new Date(S.since);e.setMonth(e.getMonth()+3);const d=Math.ceil((e-now)/864e5);mi+=` · تنتهي المدة ${e.toLocaleDateString("ar-EG")} (${d>0?"باقي "+fmt(d)+" يوم":"انتهت – يلزم تغيير المدير"})`}$("mgrinfo").textContent=mi;
+const del=(c,id)=>can?`<button class="btn d" onclick="rm('${c}','${esc(id)}')">حذف</button>`:"";
+$("sRows").innerHTML=S.subs.length?[...S.subs].sort((a,b)=>b.ts-a.ts).slice(0,100).map(x=>`<tr><td>${esc(ul(x.unit))}</td><td>${esc(x.month)}</td><td>${fmt(x.amount)} ج</td><td>${esc(x.note)}</td><td>${del("subs",x.id)}</td></tr>`).join(""):'<tr><td colspan="5" class="mut">لا توجد اشتراكات.</td></tr>';
+$("eRows").innerHTML=S.expenses.length?[...S.expenses].sort((a,b)=>b.ts-a.ts).slice(0,100).map(x=>`<tr><td>${new Date(x.ts).toLocaleDateString("ar-EG")}</td><td>${esc(x.cat)}</td><td>${fmt(x.amount)} ج</td><td>${esc(x.note)}</td><td>${del("expenses",x.id)}</td></tr>`).join(""):'<tr><td colspan="5" class="mut">لا توجد مصروفات.</td></tr>';
+$("aList").innerHTML=S.alerts.length?[...S.alerts].sort((a,b)=>b.ts-a.ts).map(a=>{const ok=a.status==="تم الحل",mine=can||(uid&&a.uid===uid);return`<div class="al ${ok?"solved":""}"><div class="row"><b>${esc(a.title)}</b><span class="bd ${a.type==="عاجل"?"r":""}">${esc(a.type)}</span></div><p class="mut">${esc(a.desc)}<br>${esc(ul(a.unit))} · ${new Date(a.ts).toLocaleDateString("ar-EG")}</p><div class="row"><span class="bd ${ok?"g":"y"}">${esc(a.status||"مفتوح")}</span><span>${mine?`<button class="btn s" onclick="flip('${esc(a.id)}')">${ok?"إعادة فتح":"تم الحل"}</button> `:""}${del("alerts",a.id)}</span></div></div>`}).join(""):'<p class="mut">لا توجد تنبيهات.</p>';
+}
+function pos(el){const v=Number($(el).value);if(!(v>0)||v>1e7){alert("أدخل مبلغاً صحيحاً");return null}return r2(v)}
+function save(){try{localStorage.setItem(DK,JSON.stringify(S))}catch(e){alert("تعذر الحفظ على هذا الجهاز")}render()}
+$("addS").onclick=()=>{if(!can)return;const a=pos("aA");if(a==null||!$("aM").value)return;S.subs.push({id:nid(),unit:$("aU").value,month:$("aM").value,amount:a,note:$("aN").value.trim(),ts:Date.now()});$("aA").value=$("aN").value="";save()};
+$("addE").onclick=()=>{if(!can)return;const a=pos("eA");if(a==null)return;S.expenses.push({id:nid(),cat:$("eC").value,amount:a,note:$("eN").value.trim(),ts:Date.now()});$("eA").value=$("eN").value="";save()};
+$("addA").onclick=()=>{const h=$("lH").value.trim();if(!can||!h){alert("اكتب عنواناً");return}S.alerts.push({id:nid(),type:$("lT").value,unit:$("lU").value,title:h,desc:$("lD").value.trim(),status:"مفتوح",ts:Date.now()});$("lH").value=$("lD").value="";save()};
+$("waA").onclick=()=>{const h=$("lH").value.trim();if(!h){alert("اكتب عنواناً");return}const u=U.find(x=>x.id===$("lU").value);open("https://wa.me/?text="+encodeURIComponent(`⚠️ ${$("lT").value} – العقار 110\n${h}\n${$("lD").value.trim()}\nالوحدة: ${lab(u)}`),"_blank")};
+$("saveSet").onclick=()=>{if(!can)return;S.fee=Math.max(0,r2(Number($("sFee").value)||0));S.mgr=$("sMgr").value.trim();S.since=$("sSince").value;S.names=$("sNames").value.split("\n").slice(0,16).map(x=>x.trim());fillSel();save()};
+window.rm=(c,id)=>{if(can&&confirm("حذف هذا السجل نهائياً؟")){S[c]=S[c].filter(x=>x.id!==id);save()}};
+window.flip=id=>{const a=S.alerts.find(x=>x.id===id);if(a&&can){a.status=a.status==="تم الحل"?"مفتوح":"تم الحل";save()}};
+const b64=u=>{let t="";u.forEach(c=>t+=String.fromCharCode(c));return btoa(t).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,"")};
+async function pack(){const b=new TextEncoder().encode(JSON.stringify({...S,t:Date.now()}));if(window.CompressionStream)return"z"+b64(new Uint8Array(await new Response(new Blob([b]).stream().pipeThrough(new CompressionStream("deflate-raw"))).arrayBuffer()));return"r"+b64(b)}
+async function unpack(h){const b=Uint8Array.from(atob(h.slice(1).replace(/-/g,"+").replace(/_/g,"/")),c=>c.charCodeAt(0));const d=h[0]==="z"?new Uint8Array(await new Response(new Blob([b]).stream().pipeThrough(new DecompressionStream("deflate-raw"))).arrayBuffer()):b;return JSON.parse(new TextDecoder().decode(d))}
+$("shareB").onclick=async()=>{const url=location.origin+location.pathname+"#d="+await pack();if(navigator.share){try{await navigator.share({title:"اتحادنا AI – العقار 110",text:"بيانات العمارة (للقراءة فقط)",url})}catch(e){}}else{try{await navigator.clipboard.writeText(url);alert("تم نسخ الرابط")}catch(e){prompt("انسخ الرابط",url)}}};
+$("bkB").onclick=()=>{const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([JSON.stringify(S)],{type:"application/json"}));a.download="etehadna110-backup-"+new Date().toISOString().slice(0,10)+".json";a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)};
+$("rsF").onchange=e=>{const f=e.target.files[0];if(!f||!can)return;const r=new FileReader();r.onload=()=>{try{const d=JSON.parse(r.result);if(!confirm("سيتم استبدال البيانات الحالية. متابعة؟"))return;adopt(d);fillSel();enter(true);save()}catch(x){alert("ملف غير صالح")}};r.readAsText(f)};
+let auth=null,fails=0,lockUntil=0,idle,dp;try{auth=JSON.parse(localStorage.getItem(AK))}catch(e){}
+async function hp(p,salt){const te=new TextEncoder();if(window.crypto&&crypto.subtle){const k=await crypto.subtle.importKey("raw",te.encode(p),"PBKDF2",false,["deriveBits"]);const b=await crypto.subtle.deriveBits({name:"PBKDF2",salt:te.encode(salt),iterations:150000,hash:"SHA-256"},k,256);return"p"+[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,"0")).join("")}let h1=0xdeadbeef,h2=0x41c6ce57;for(let r=0;r<2000;r++)for(const c of te.encode(p+salt)){h1=Math.imul(h1^c,2654435761);h2=Math.imul(h2^c,1597334677)}return"f"+(h1>>>0).toString(16)+(h2>>>0).toString(16)}
+function showLock(){clearTimeout(idle);can=false;document.body.classList.add("locked");$("lk").style.display="flex";$("lkT").textContent="اتحادنا AI – العقار 110";$("lkM").textContent=auth?"المدير: أدخل كلمة المرور. السكان: ادخلوا للعرض فقط.":"أول تشغيل: لو أنت مدير العمارة أنشئ كلمة مرور (6 أحرف على الأقل). لو ساكن اضغط دخول كساكن.";$("pw2w").style.display=auth?"none":"block";$("lkX").style.display=auth?"":"none";$("lkB").textContent=auth?"دخول المدير":"إنشاء كلمة المرور ودخول";$("lkE").textContent="";$("pw").value=$("pw2").value=""}
+function bump(){clearTimeout(idle);idle=setTimeout(showLock,300000)}
+function enter(m){can=m;document.body.classList.remove("locked");$("lk").style.display="none";$("lockb").style.display=m?"":"none";if(m){$("sFee").value=S.fee||"";$("sMgr").value=S.mgr;$("sSince").value=S.since;$("sNames").value=S.names.join("\n");bump()}else if(!S.subs.length&&!S.expenses.length)$("err").textContent="لعرض بيانات العمارة افتح رابط العرض الذي يرسله المدير.";render()}
+$("lkR").onclick=()=>enter(false);$("lockb").onclick=()=>{enter(false);showLock()};
+$("lkB").onclick=async()=>{const e=$("lkE"),p=$("pw").value;if(Date.now()<lockUntil){e.textContent="انتظر "+Math.ceil((lockUntil-Date.now())/1000)+" ثانية";return}
+if(!auth){if(p.length<6){e.textContent="كلمة المرور 6 أحرف على الأقل";return}if(p!==$("pw2").value){e.textContent="كلمتا المرور غير متطابقتين";return}const salt=nid()+Math.random();auth={salt,hash:await hp(p,salt)};try{localStorage.setItem(AK,JSON.stringify(auth))}catch(x){}}
+else if(await hp(p,auth.salt)!==auth.hash){if(++fails>=5){fails=0;lockUntil=Date.now()+60000;e.textContent="تم الإيقاف دقيقة بسبب محاولات خاطئة"}else e.textContent="كلمة المرور غير صحيحة";return}
+fails=0;enter(true)};
+["pw","pw2"].forEach(i=>$(i).addEventListener("keydown",e=>{if(e.key==="Enter")$("lkB").click()}));
+$("lkX").onclick=()=>{if(confirm("سيتم حذف كل بيانات التطبيق وكلمة المرور من هذا الجهاز نهائياً. متأكد؟")){localStorage.removeItem(DK);localStorage.removeItem(AK);location.reload()}};
+["click","keydown","touchstart"].forEach(ev=>document.addEventListener(ev,()=>{if(can)bump()}));
+addEventListener("beforeinstallprompt",e=>{e.preventDefault();dp=e;$("inst").style.display=""});$("inst").onclick=async()=>{if(dp){dp.prompt();await dp.userChoice;dp=null;$("inst").style.display="none"}};
+if("serviceWorker"in navigator)addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));
+(async()=>{const H=location.hash;fillSel();if(H.startsWith("#d=")){try{adopt(await unpack(H.slice(3)));fillSel();document.body.classList.remove("locked");$("snap").style.display="";$("snap").textContent="نسخة للقراءة فقط بتاريخ "+new Date(S.t||Date.now()).toLocaleString("ar-EG")+" · اطلب من المدير رابطاً محدثاً عند الحاجة."}catch(e){$("err").textContent="رابط العرض تالف أو غير مكتمل."}render();return}
+render();showLock()})();
+// موسيقى هادئة (WebAudio، بدون ملفات خارجية)
+let ac,master,tm,mOn=false,off=false,bi=0;const CH=[[261.6,329.6,392,493.9],[220,261.6,329.6,392],[174.6,220,261.6,329.6],[196,246.9,293.7,392]];
+function nt(f,t,d){const o=ac.createOscillator(),g=ac.createGain();o.type="sine";o.frequency.value=f;g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(.05,t+2);g.gain.linearRampToValueAtTime(0,t+d);o.connect(g);g.connect(master);o.start(t);o.stop(t+d+.1)}
+function bar(){const c=CH[bi++%4],t=ac.currentTime;c.forEach((f,k)=>nt(f,t+k*.4,7));nt(c[0]/2,t,7)}
+async function mus(on){try{if(on){if(!ac){ac=new(window.AudioContext||window.webkitAudioContext)();master=ac.createGain();const lp=ac.createBiquadFilter(),dl=ac.createDelay(),fb=ac.createGain();lp.type="lowpass";lp.frequency.value=1400;dl.delayTime.value=.45;fb.gain.value=.4;master.connect(lp);lp.connect(ac.destination);lp.connect(dl);dl.connect(fb);fb.connect(dl);dl.connect(ac.destination)}await ac.resume();if(!mOn){bar();tm=setInterval(bar,6000)}mOn=true}else{clearInterval(tm);if(ac)await ac.suspend();mOn=false}}catch(e){mOn=false}
+$("mbtn").classList.toggle("on",mOn);$("mbtn").textContent=mOn?"⏸ إيقاف الموسيقى":"🎵 موسيقى هادئة"}
+$("mbtn").onclick=()=>{off=mOn;mus(!mOn)};
+["pointerdown","keydown"].forEach(ev=>addEventListener(ev,e=>{if(!mOn&&!off&&!(e.target.closest&&e.target.closest("#mbtn"))){off=true;mus(true)}},{once:false}));
+</script></body></html>
